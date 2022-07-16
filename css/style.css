@@ -11,13 +11,15 @@
     --color-white: #FFFFFF;
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
+    --raleway: Raleway, sans-serif;
+    --open-sans: Open Sans, sans-serif;
 }
 
 .container {
     width: 1352px;
     margin: 0 auto;
-    font-family: Open Sans, sans-serif;
 }
+
 /*header*/
 
 header {
@@ -33,7 +35,7 @@ header div {
 
 .logo {
     align-self: center;
-    font-family: Raleway, sans-serif;
+    font-family: var(--raleway);
     font-size: 32px;
     font-weight: 300;
     color: var(--color-primary);
@@ -49,9 +51,10 @@ header div {
     display: inline-flex;
     padding: 28px 12px 27px 12px;
     margin: 0 35.5px 0 35.5px;
-    font-family: Raleway, sans-serif;
+    font-family: var(--raleway);
     font-size: 11px;
     font-weight: bold;
+    letter-spacing: 3.28px;
     color: var(--color-grey);
     text-decoration: none;
 }
@@ -62,6 +65,42 @@ header div {
     color: var(--color-black);
 }
 
-/**/
+/*main*/
+/*main-opening*/
+
+.main-opening {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 70px);
+    text-align: center;
+}
+
+.main-opening-header{
+    font-family: var(--raleway);
+    font-size: 49px;
+}
+
+.main-opening-description {
+    font-family: var(--open-sans);
+    margin: 20px 0 60px;
+}
+
+.main-opening-img {
+    position: relative;
+    bottom: -100px;
+}
+
+/*main-statistics*/
 
 /*btn*/
+
+.main-btn {
+    padding: 22px 157px 23px;
+    border-radius: 40px;
+    background: var(--color-primary);
+    font-family: var(--open-sans);
+    color: var(--color-white);
+    text-decoration: none;
+}
