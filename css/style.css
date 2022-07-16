@@ -161,6 +161,128 @@ header div {
     color: var(--color-grey)
 }
 
+/*benefits*/
+
+.benefits {
+    padding: 105px;
+    background-color: var(--color-light-grey);
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits-article {
+    margin: 37px;
+    max-width: 1124px;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    position: center;
+}
+
+
+.benefits-article h2,
+.benefits-article-last h2{
+    font-family: var(--raleway);
+    font-size: 36px;
+}
+
+.benefits-article p,
+.benefits-article-last p {
+    font-family: var(--open-sans);
+    margin: 30px 0 50px;
+}
+
+.benefits-article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 416px;
+}
+
+.benefits-article-last {
+    margin: 37px;
+    max-width: 1124px;
+    display: flex;
+    justify-content: space-between;
+    position: center;
+}
+
+.benefits-article-last-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 632px;
+    background-color: var(--color-white);
+}
+
+.line {
+    height: 4px;
+    width: 328px;
+}
+
+.line-red {
+    background-color: var(--color-redish);
+}
+
+.line-blue {
+    background-color: var(--color-primary);
+}
+
+.line-green {
+    background-color: var(--color-green);
+}
+
+.macbook {
+    align-self: center;
+    height: 219px;
+    position: relative;
+    z-index: 2;
+}
+
+.macbook-rectangle {
+    position: relative;
+}
+
+.macbook-rectangle::before {
+    content: "";
+    transform: rotate(45deg);
+    height: 180px;
+    width: 180px;
+    background-color: var(--color-redish);
+    display:block;
+    border-radius: 41px;
+    right: 0;
+    top: -40px;
+}
+
+.iphon {
+    height: 328px;
+}
+
+.iphon-circle::before {
+     content: "";
+     height: 320px;
+     width: 320px;
+     background-color: var(--color-primary);
+     display:block;
+     border-radius: 50%;
+     right: 0;
+     top: -40px;
+ }
+
+.trumpet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 370px;
+    background-color: var(--color-green);
+}
+
+.trumpet img {
+    width: 296px;
+}
+
 /*btn*/
 
 .main-btn {
