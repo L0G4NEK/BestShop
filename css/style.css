@@ -25,6 +25,10 @@ h1 {
     font-size: 49px;
 }
 
+h2 {
+    font-family: var(--raleway);
+    font-size: 36px;
+}
 
 
 /*header*/
@@ -101,10 +105,6 @@ header div {
 
 }
 
-h2 {
-    font-family: var(--raleway);
-    font-size: 36px;
-}
 
 
 
@@ -301,6 +301,10 @@ h2 {
 
 /*pricing*/
 
+.pricing {
+    margin-bottom: 155px;
+}
+
 .pricing .container{
     display: flex;
     flex-direction: column;
@@ -418,7 +422,132 @@ h2 {
 
 /*Contact*/
 
+.contact {
+    margin-bottom: 59px;
+}
 
+.contact .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info p {
+    margin: 22px 0 42px;
+    font-family: var(--open-sans);
+}
+
+.contact-info ul {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--open-sans);
+    font-weight: 600;
+    color: var(--color-grey)
+}
+
+.contact-info-e-mail::before {
+    content: "";
+    background-image: url("../images/Mail Icon.svg");
+    display: block;
+    position: relative;
+    bottom: 5px;
+    float: left;
+    height: 27px;
+    width: 27px;
+}
+
+.contact-info-phone::before {
+    content: "";
+    background-image: url("../images/Phone Icon.svg");
+    display: block;
+    position: relative;
+    bottom: 5px;
+    float: left;
+    height: 27px;
+    width: 27px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 440px;
+}
+
+.contact-form-text {
+    color: var(--color-primary);
+    font-family: var(--open-sans);
+    font-size: 11px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.contact-form input {
+    height: 42px;
+    width: 440px;
+    margin-bottom: 42px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--color-grey)
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox {
+    font-family: var(--open-sans);
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 0;
+    padding-top: 0;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 17px;
+    color: #707070;
+}
+.checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.control_indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #ffffff;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+}
+
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.checkbox input:checked ~ .control_indicator:after {
+    display: block;
+}
+
+.control-checkbox .control_indicator:after {
+    left: 6px;
+    top: 3px;
+    width: 4px;
+    height: 9px;
+    border: solid #08A6E4;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+}
+
+
+/*footer*/
 
 
 /*btn*/
@@ -456,4 +585,13 @@ h2 {
 
 .btn-blue {
     background-color: var(--color-primary);
+}
+
+.btn-submit {
+    margin-top: 40px;
+    padding: 20px 97px 19px;
+    border: none;
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+    border-radius: 35px;
+    color: var(--color-white);
 }
