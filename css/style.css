@@ -20,6 +20,13 @@
     margin: 0 auto;
 }
 
+h1 {
+    font-family: var(--raleway);
+    font-size: 49px;
+}
+
+
+
 /*header*/
 
 header {
@@ -65,6 +72,10 @@ header div {
     color: var(--color-black);
 }
 
+
+
+
+
 /*main*/
 /*main-opening*/
 
@@ -75,11 +86,6 @@ header div {
     height: calc(100vh - 70px);
     text-align: center;
     position: relative;
-}
-
-.main-opening-header{
-    font-family: var(--raleway);
-    font-size: 49px;
 }
 
 .main-opening-description {
@@ -94,6 +100,14 @@ header div {
     bottom: 0;
 
 }
+
+h2 {
+    font-family: var(--raleway);
+    font-size: 36px;
+}
+
+
+
 
 /*main-statistics*/
 
@@ -115,11 +129,6 @@ header div {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.main-statistics-header {
-    font-family: var(--raleway);
-    font-size: 36px;
 }
 
 .main-statistics-icon {
@@ -161,6 +170,11 @@ header div {
     color: var(--color-grey)
 }
 
+
+
+
+
+
 /*benefits*/
 
 .benefits {
@@ -176,14 +190,8 @@ header div {
     background-color: var(--color-white);
     display: flex;
     justify-content: space-between;
-    position: center;
-}
-
-
-.benefits-article h2,
-.benefits-article-last h2{
-    font-family: var(--raleway);
-    font-size: 36px;
+    align-items: center;
+    border: 1px solid #E8E9ED;
 }
 
 .benefits-article p,
@@ -213,6 +221,8 @@ header div {
     justify-content: center;
     max-width: 632px;
     background-color: var(--color-white);
+    border: 1px solid #E8E9ED;
+    padding: 0 35px;
 }
 
 .line {
@@ -277,11 +287,139 @@ header div {
     width: 400px;
     height: 370px;
     background-color: var(--color-green);
+    border: 1px solid #E8E9ED;
 }
 
 .trumpet img {
     width: 296px;
 }
+
+
+
+
+
+
+/*pricing*/
+
+.pricing .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.pricing h2{
+    margin: 100px 0 50px;
+}
+
+.pricing-articles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pricing-article {
+    height: 461px;
+    width: 372px;
+    border: 1px solid;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pricing-article h3 {
+    font-family: var(--raleway);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pricing-article h4 {
+    line-height: 64px;
+    font-family: var(--open-sans);
+    font-size: 46px;
+    font-weight: 300;
+    padding: 14px 0 5px;
+}
+
+.pricing-article h5 {
+    font-family: var(--raleway);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pricing-article-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing-article-text li {
+    font-family: var(--open-sans);
+    font-size: 14px;
+    line-height: 41px;
+}
+
+.article-red {
+    border-color: var(--color-redish);
+}
+
+.article-red h4 {
+    color: var(--color-redish);
+}
+
+.article-blue {
+    border-color: var(--color-primary);
+}
+
+.article-blue h4{
+    color: var(--color-primary);
+}
+
+.article-green {
+    border-color: var(--color-green);
+}
+
+.article-green h4{
+    color: var(--color-green);
+}
+
+.yes::before {
+    content: "";
+    height: 11px;
+    width: 11px;
+    background-image: url("../images/Ckechmark-1.svg");
+    display: block;
+    position: relative;
+    left: -19px;
+    top: 25px;
+}
+
+.no::before {
+    content: "";
+    height: 11px;
+    width: 11px;
+    background-image: url("../images/Close.svg");
+    display: block;
+    position: relative;
+    left: -19px;
+    top: 25px;
+}
+
+
+
+/*Contact*/
+
+
+
 
 /*btn*/
 
@@ -294,4 +432,28 @@ header div {
     color: var(--color-white);
     text-decoration: none;
     box-shadow: 5px 10px 14px var(--color-primary-shadow)
+}
+
+.btn-begin {
+    padding: 15px 57px;
+    font-family: var(--open-sans);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 23px;
+    color: var(--color-white);
+    position: relative;
+    bottom: -30px;
+}
+
+.btn-red {
+    background-color: var(--color-redish);
+}
+
+.btn-green {
+    background-color: var(--color-green);
+}
+
+.btn-blue {
+    background-color: var(--color-primary);
 }
