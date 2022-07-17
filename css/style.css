@@ -396,6 +396,9 @@ header div {
 
 .article-blue {
     border-color: var(--color-primary);
+    box-shadow: 5px 10px 27px #07ACE629;
+    height: 500px;
+    width: 405px;
 }
 
 .article-blue h4{
@@ -631,6 +634,7 @@ footer .container {
 
 .btn-blue {
     background-color: var(--color-primary);
+    bottom: -35px;
 }
 
 .btn-submit {
