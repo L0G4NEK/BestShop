@@ -185,6 +185,7 @@ header div {
 }
 
 .benefits-article {
+    padding: 0 20px 0 36px;
     margin: 37px;
     max-width: 1124px;
     background-color: var(--color-white);
@@ -192,6 +193,7 @@ header div {
     justify-content: space-between;
     align-items: center;
     border: 1px solid #E8E9ED;
+    border-radius: 5px;
 }
 
 .benefits-article p,
@@ -223,6 +225,7 @@ header div {
     background-color: var(--color-white);
     border: 1px solid #E8E9ED;
     padding: 0 35px;
+    border-radius: 5px;
 }
 
 .line {
@@ -250,35 +253,45 @@ header div {
 }
 
 .macbook-rectangle {
+    margin: 113px 98px 38px;
     position: relative;
 }
 
-.macbook-rectangle::before {
+.macbook-rectangle::before{
     content: "";
-    transform: rotate(45deg);
-    height: 180px;
     width: 180px;
+    height: 180px;
     background-color: var(--color-redish);
-    display:block;
-    border-radius: 41px;
+    display: block;
+    border-radius: 40px;
+    position: absolute;
     right: 0;
     top: -40px;
+    transform: rotate(45deg);
 }
 
 .iphon {
-    height: 328px;
+    align-self: center;
+    width: 426px;
+    z-index: 2;
+}
+
+.iphon-circle {
+    position: relative;
+    margin: 29px 34px 13px;
 }
 
 .iphon-circle::before {
-     content: "";
-     height: 320px;
-     width: 320px;
-     background-color: var(--color-primary);
-     display:block;
-     border-radius: 50%;
-     right: 0;
-     top: -40px;
- }
+    content: "";
+    width: 320px;
+    height: 320px;
+    background-color: var(--color-primary);
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
 
 .trumpet {
     display: flex;
@@ -288,6 +301,7 @@ header div {
     height: 370px;
     background-color: var(--color-green);
     border: 1px solid #E8E9ED;
+    border-radius: 5px;
 }
 
 .trumpet img {
