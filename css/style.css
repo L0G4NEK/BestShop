@@ -548,6 +548,38 @@ header div {
 
 
 /*footer*/
+footer {
+    padding: 20px 0 17px;
+    background: var(--color-light-grey);
+    box-shadow: 0 -5px 40px #00000029;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright h3 {
+    color: var(--color-primary);
+    font-family: var(--raleway);
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 7px;
+}
+
+.copyright p {
+    font-family: var(--open-sans);
+    font-size: 11px;
+    color: var(--color-grey);
+    line-height: 15px;
+}
+
+.twitter {
+    margin-right: 20px;
+}
+
 
 
 /*btn*/
