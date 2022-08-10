@@ -1,0 +1,29 @@
+.main-opening {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 70px);
+  text-align: center;
+  position: relative;
+}
+
+.main-opening-description {
+  font-family: $open-sans;
+  margin: 20px 0 60px;
+}
+
+.main-opening-img {
+  width: 150vw;
+  padding-top: 15px;
+  position: absolute;
+  bottom: 0;
+  align-self: center;
+
+  @include tablet {
+    width: 100vw;
+  }
+
+  @include desktop {
+    width: 100vw;
+  }
+}
