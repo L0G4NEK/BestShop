@@ -24,7 +24,7 @@ h2 {
   color: #fff;
   background: #08a6e4;
   border-radius: 40px;
-  padding: 22px 92px 23px;
+  padding: 22px 92px;
   font-family: Open Sans, sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -33,7 +33,7 @@ h2 {
 
 @media (min-width: 1025px) {
   .main-btn {
-    padding: 22px 157px 23px;
+    padding: 22px 157px;
   }
 }
 
@@ -215,36 +215,37 @@ h2 {
   }
 }
 
-.main-opening {
-  height: calc(100vh - 70px);
+.opening {
   text-align: center;
   flex-direction: column;
-  margin-top: 130px;
   display: flex;
   position: relative;
 }
 
-.main-opening-description {
+.opening__header {
+  margin-top: 130px;
+}
+
+.opening__description {
   margin: 20px 0 60px;
   font-family: Open Sans, sans-serif;
 }
 
-.main-opening-img {
-  width: 150vw;
+.opening__img {
+  height: auto;
+  width: 200vw;
   align-self: center;
-  padding-top: 15px;
-  position: absolute;
-  bottom: 0;
+  margin-top: 74px;
 }
 
 @media (min-width: 800px) {
-  .main-opening-img {
-    width: 100vw;
+  .opening__img {
+    width: 150vw;
   }
 }
 
 @media (min-width: 1025px) {
-  .main-opening-img {
+  .opening__img {
     width: 100vw;
   }
 }
